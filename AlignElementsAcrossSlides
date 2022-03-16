@@ -1,0 +1,13 @@
+Sub ResizeAll()
+For Each tSlide In ActiveWindow.Presentation.Slides
+    With tSlide.Shapes.Item(8)
+    'assume a blank slide with one image added only
+        .Height = 72 * 7.39
+        .Width = 72 * 17.67
+    'algin middle (Horizontal Center)
+        .Left = 110
+        .Top = 500
+    End With
+Next
+End Sub
+
